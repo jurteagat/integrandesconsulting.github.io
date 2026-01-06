@@ -12,20 +12,22 @@ website:
       - href: index.qmd
         text: Inicio
    
-    tools:
-      - icon: github
-        href: https://github.com/RafiReyes
-      - icon: linkedin
-        href: https://www.linkedin.com/
-      - icon: youtube
-        href: https://www.youtube.com/
-
   sidebar:
     style: "docked"
     search: true
     contents:
       - href: index.qmd
         text: Inicio
+        
+  footer:
+    center:
+      - icon: github
+        href: https://github.com/integrandesconsulting
+      - icon: facebook
+        href: https://www.facebook.com/integrandes.co
+      - icon: youtube
+        href: https://www.youtube.com/
+  
 
 format:
   html:
