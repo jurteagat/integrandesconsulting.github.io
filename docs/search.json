@@ -2,9 +2,12 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "integrandesweb",
+    "title": "Inicio",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Ética: se realiza un trabajo honesto y se pide a los clientes que toda coordinación se realice dentro de dichos marcos.\nClaridad: buscamos que nuestros clientes tengan la mayor claridad sobre los procedimientos que realizamos.\nCalidad: nos comprometemos a realizar un servicio de calidad, según los requerimientos especiales de cada cliente.",
+    "crumbs": [
+      "Inicio"
+    ]
   },
   {
     "objectID": "about.html",

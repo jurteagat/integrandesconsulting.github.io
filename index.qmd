@@ -1,11 +1,11 @@
 ---
-title: "integrandesweb"
+title: "Inicio"
 ---
 
-This is a Quarto website.
+![](images/cajamarca.gif){fig-alt="Ciudad de Cajamarca" style="width:100%; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.15);"}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
-```{r}
-1 + 1
-```
+
+  - **Ética:** se realiza un trabajo honesto y se pide a los clientes que toda coordinación se realice dentro de dichos marcos.
+  - **Claridad:** buscamos que nuestros clientes tengan la mayor claridad sobre los procedimientos que realizamos.
+  - **Calidad:** nos comprometemos a realizar un servicio de calidad, según los requerimientos especiales de cada cliente.

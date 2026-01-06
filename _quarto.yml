@@ -1,21 +1,39 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "integrandesweb"
+  title: "Rafael Reyes"
+  favicon: rudder.svg
+  open-graph: true
+
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Inicio
+   
+    tools:
+      - icon: github
+        href: https://github.com/RafiReyes
+      - icon: linkedin
+        href: https://www.linkedin.com/
+      - icon: youtube
+        href: https://www.youtube.com/
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - href: index.qmd
+        text: Inicio
 
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
+    toc-location: right
 
 editor: visual
-
