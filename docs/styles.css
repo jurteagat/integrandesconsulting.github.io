@@ -1,1 +1,16 @@
 /* css styles */
+/* Footer con color (fondo + íconos) */
+.nav-footer, .page-footer {
+  background: #7BC5B3;   /* mismo tono que tu header (cámbialo si quieres) */
+  padding: 0.8rem 0;
+}
+
+.nav-footer a, .page-footer a {
+  color: white !important;
+  opacity: 0.95;
+}
+
+.nav-footer a:hover, .page-footer a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
