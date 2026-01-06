@@ -1,16 +1,43 @@
 /* css styles */
-/* Footer con color (fondo + íconos) */
-.nav-footer, .page-footer {
-  background: #7BC5B3;   /* mismo tono que tu header (cámbialo si quieres) */
-  padding: 0.8rem 0;
-}
-
-.nav-footer a, .page-footer a {
+/* Footer dinámico que imita el tema en ambos modos */
+.page-footer {
+  background-color: var(--bs-primary) !important;
   color: white !important;
-  opacity: 0.95;
+  padding: 1.2rem 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  border-top: 2px solid var(--bs-border-color);
 }
 
-.nav-footer a:hover, .page-footer a:hover {
-  opacity: 1;
+/* Contenedor interno de íconos */
+.page-footer .nav-footer-center {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+/* Íconos del footer */
+.page-footer a {
+  color: white !important;
+  opacity: 0.9;
   text-decoration: none;
+  font-size: 1.4rem;
+  transition: opacity 0.2s ease;
+}
+
+.page-footer a:hover {
+  opacity: 1;
+}
+
+/* Copyright debajo y centrado */
+.page-footer p, .page-footer .footer-text {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
 }

@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "INTEGRANDES"
+  title: "INTEGRANDES CONSULTING"
   favicon: rudder.svg
   open-graph: true
 
@@ -13,13 +13,15 @@ website:
         text: Inicio
         
   page-footer:
-    center:
+    border: true
+    center: 
       - icon: github
         href: https://github.com/integrandesconsulting
       - icon: facebook
         href: https://www.facebook.com/integrandes.co
       - icon: youtube
         href: https://www.youtube.com/
+      - text: "Copyright © 2026 R.R."
    
   sidebar:
     style: "docked"
