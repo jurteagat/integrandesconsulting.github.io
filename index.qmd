@@ -7,26 +7,24 @@ format:
     css: styles.css
 ---
 
-::::::::::: hero-grid
-::::: hero-left
-:::: hero-figure
+::: {.hero}
+
+::: {.hero-left}
+::: {.media-card}
 ![](images/cajamarca.gif){.hero-media alt="Ciudad de Cajamarca (GIF)"}
 
-::: hero-caption
-Ciudad de Cajamarca
 :::
-::::
-:::::
+:::
 
 ::::::: hero-right
 ::::: brand
 ![](images/logo.png){.brand-logo alt="Logo Integrandes"}
 
-::: brand-title
+::: {.brand-title}
 Integrandes
 :::
 
-::: brand-tagline
+::: {.brand-tagline}
 Integralidad en el desarrollo
 :::
 :::::
@@ -38,5 +36,4 @@ Integralidad en el desarrollo
 -   **Claridad:** buscamos que nuestros clientes tengan la mayor claridad sobre los procedimientos que realizamos.
 -   **Calidad:** nos comprometemos a realizar un servicio de calidad, según los requerimientos especiales de cada cliente.
 :::
-:::::::
-:::::::::::
+:::
