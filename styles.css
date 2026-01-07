@@ -9,7 +9,6 @@ main.content {
 
 /* =========================
    1) HERO GRID RESPONSIVE
-========================= */
 .hero {
   width: min(1320px, 96vw);
   margin: 0 auto;
@@ -29,7 +28,6 @@ main.content {
 
 /* =========================
    2) IZQUIERDA: GIF completo, centrado y sin espacios
-========================= */
 .hero-left {
   display: flex;
   justify-content: center;
@@ -99,7 +97,6 @@ main.content {
 
 /* =========================
    3) DERECHA: Marca + Textos
-========================= */
 .hero-right {
   display: flex;
   flex-direction: column;
@@ -136,7 +133,6 @@ main.content {
 
 /* =========================
    4) TARJETA PRINCIPIOS
-========================= */
 .card-soft {
   width: min(760px, 100%);
   padding: 1rem 1.2rem;
@@ -160,11 +156,11 @@ main.content {
 .card-soft li {
   margin: 0.55rem 0;
   line-height: 1.35;
+  color: #333;
 }
 
 /* =========================
    5) MODO OSCURO (Darkly)
-========================= */
 html[data-bs-theme="dark"] .card-soft {
   background: rgba(255, 255, 255, 0.08);
   color: rgba(255, 255, 255, 0.92);
