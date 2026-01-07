@@ -7,15 +7,12 @@ format:
     css: style.css
 ---
 
-::: {.hero-grid}
+::: {.hero}
 
 ::: {.hero-left}
-::: {.hero-figure}
+::: {.media-card}
 ![](images/cajamarca.gif){.hero-media alt="Ciudad de Cajamarca (GIF)"}
 
-::: {.hero-caption}
-Ciudad de Cajamarca
-:::
 :::
 :::
 
@@ -23,9 +20,11 @@ Ciudad de Cajamarca
 
 ::: {.brand}
 ![](images/logo.png){.brand-logo alt="Logo Integrandes"}
+
 ::: {.brand-title}
 Integrandes
 :::
+
 ::: {.brand-tagline}
 Integralidad en el desarrollo
 :::
@@ -41,5 +40,3 @@ Integralidad en el desarrollo
 
 :::
 :::
-
-
