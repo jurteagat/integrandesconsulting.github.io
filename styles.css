@@ -1,43 +1,140 @@
 /* css styles */
-/* Footer dinámico que imita el tema en ambos modos */
-.page-footer {
-  background-color: var(--bs-primary) !important;
-  color: white !important;
-  padding: 1.2rem 0;
-  text-align: center;
+/* Evita márgenes raros del layout */
+main.content {
+  padding-top: 1.25rem;
+}
+
+/* ===== GRID principal (como tu captura) ===== */
+.hero-grid{
+  display: grid;
+  grid-template-columns: 1.35fr 1fr; /* izquierda más ancha */
+  gap: 3.2rem;
+  align-items: start;               /* que NO se centre verticalmente */
+  width: min(1200px, 96vw);
+  margin: 0 auto;
+}
+
+/* ===== Izquierda: GIF grande, sin distorsión ===== */
+.hero-left{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hero-figure{
+  position: relative;
+  width: 100%;
+  max-width: 820px;       /* ajusta el tamaño “tipo tu ejemplo” */
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+  background: #000;
+}
+
+/* CLAVE: cero deformación */
+.hero-media{
+  display: block;
+  width: 100%;
+  height: auto;           /* mantiene proporción */
+  object-fit: contain;    /* por seguridad */
+}
+
+/* Texto “Ciudad de Cajamarca” encima, abajo-izquierda (como tu ejemplo) */
+.hero-caption{
+  position: absolute;
+  left: 16px;
+  bottom: 12px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.65);
+}
+
+/* Línea azul finita abajo (como se ve en tu screenshot) */
+.hero-figure::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background: #1f4aff;
+}
+
+/* ===== Derecha: marca + tarjeta ===== */
+.hero-right{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  font-size: 1rem;
-  border-top: 2px solid var(--bs-border-color);
-}
-
-/* Contenedor interno de íconos */
-.page-footer .nav-footer-center {
-  display: flex;
-  justify-content: center;
-  gap: 0.8rem;
-}
-
-/* Íconos del footer */
-.page-footer a {
-  color: white !important;
-  opacity: 0.9;
-  text-decoration: none;
-  font-size: 1.4rem;
-  transition: opacity 0.2s ease;
-}
-
-.page-footer a:hover {
-  opacity: 1;
-}
-
-/* Copyright debajo y centrado */
-.page-footer p, .page-footer .footer-text {
-  margin: 0;
+  gap: 1.2rem;
+  padding-top: 0.3rem;
   text-align: center;
-  width: 100%;
-  font-weight: 500;
 }
+
+/* Marca */
+.brand{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.brand-logo{
+  width: 150px;
+  height: auto;
+}
+
+.brand-title{
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #6b7aa7;     /* similar al tono de tu ejemplo */
+  line-height: 1.1;
+}
+
+.brand-tagline{
+  font-size: 0.95rem;
+  color: #7aa8ff;
+  margin-top: -0.15rem;
+}
+
+/* Tarjeta “Principios de trabajo” */
+.card-soft{
+  width: min(720px, 100%);
+  background: #eef2ff;
+  border-radius: 0;              /* tu ejemplo se ve más “recta” */
+  padding: 1rem 1.1rem;
+  text-align: left;
+}
+
+.card-soft h2{
+  margin: 0 0 0.65rem 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.card-soft ul{
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.card-soft li{
+  margin: 0.55rem 0;
+  line-height: 1.35;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px){
+  .hero-grid{
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .hero-right{
+    align-items: stretch;
+    text-align: left;
+  }
+  .brand{
+    align-items: flex-start;
+  }
+}
+

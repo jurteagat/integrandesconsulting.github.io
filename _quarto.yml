@@ -6,11 +6,22 @@ website:
   title: "INTEGRANDES CONSULTING"
   favicon: rudder.svg
   open-graph: true
+  site-url: https://integrandesconsulting.github.io/
 
   navbar:
-    left:
+    collapse-level: 0
+    right:
       - href: index.qmd
         text: Inicio
+      - href: servicios.qmd
+        text: Servicios
+      - href: portafolio.qmd
+        text: Portafolio
+      - href: equipo.qmd
+        text: Equipo
+      - href: contacto.qmd
+        text: Contacto
+        
         
   page-footer:
     border: true
@@ -21,14 +32,7 @@ website:
         href: https://www.facebook.com/integrandes.co
       - icon: youtube
         href: https://www.youtube.com/
-      - text: "Copyright © 2026 R.R."
-   
-  sidebar:
-    style: "docked"
-    search: true
-    contents:
-      - href: index.qmd
-        text: Inicio
+    right: "Copyright © 2026 R.R."
         
 format:
   html:

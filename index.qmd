@@ -1,11 +1,45 @@
 ---
-title: "Inicio"
+title: ""
+page-layout: full
+toc: false
+format:
+  html:
+    css: style.css
 ---
 
-![](images/cajamarca.gif){fig-alt="Ciudad de Cajamarca" style="width:100%; border-radius:16px; box-shadow:0 10px 30px rgba(0,0,0,.15);"}
+::: {.hero-grid}
+
+::: {.hero-left}
+::: {.hero-figure}
+![](images/cajamarca.gif){.hero-media alt="Ciudad de Cajamarca (GIF)"}
+
+::: {.hero-caption}
+Ciudad de Cajamarca
+:::
+:::
+:::
+
+::: {.hero-right}
+
+::: {.brand}
+![](images/logo.png){.brand-logo alt="Logo Integrandes"}
+::: {.brand-title}
+Integrandes
+:::
+::: {.brand-tagline}
+Integralidad en el desarrollo
+:::
+:::
+
+::: {.card-soft}
+## Principios de trabajo
+
+- **Ética:** se realiza un trabajo honesto y se pide a los clientes que toda coordinación se realice dentro de dichos marcos.
+- **Claridad:** buscamos que nuestros clientes tengan la mayor claridad sobre los procedimientos que realizamos.
+- **Calidad:** nos comprometemos a realizar un servicio de calidad, según los requerimientos especiales de cada cliente.
+:::
+
+:::
+:::
 
 
-
-  - **Ética:** se realiza un trabajo honesto y se pide a los clientes que toda coordinación se realice dentro de dichos marcos.
-  - **Claridad:** buscamos que nuestros clientes tengan la mayor claridad sobre los procedimientos que realizamos.
-  - **Calidad:** nos comprometemos a realizar un servicio de calidad, según los requerimientos especiales de cada cliente.
